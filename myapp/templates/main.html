@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Calling app</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+    <div class="bordersection">
+
+        <div class="maincontainer">
+
+            <div class="titlesection">
+                <i class='fas fa-chalkboard-teacher'></i>
+                <h3 id="label-username">Your Nickname</h3>
+                <div class="nickname">
+                    <input id="username" placeholder="Write Your Nickname..."><button id="btn-join"><i class="fa fa-sign-in"></i></button>
+                </div>
+            </div>
+            
+            <div class="main-grid-container">
+                <div class="videobody">
+                    <h3><i class="fa fa-users"></i> Conferencing</h3>
+                    <div id="video-container">
+
+                        <div class="localuser">
+                            <video id="local-video" autoplay playsinline></video>
+                        </div>
+
+                    </div>
+                    <div class="buttonbox">
+                        <button id="btn-toggle-audio">Audio Mute</button>
+                        <button id="btn-toggle-video">Video Off</button>
+                    </div>
+                    <!-- <div class="msgbox">
+                        <input id="msg" placeholder="Type a Message...">
+                        <button id="btn-send-msg"><i class="fa fa-send"></i>
+                        </button>
+                    </div> -->
+                </div>
+                <div id="chat">
+                    <h3><i class="fa fa-comments"></i>Whispering</h3>
+                    <div id="messages">
+                        <ul id="message-list"></ul>
+                    </div>
+                    <div class="msgbox">
+                        <input id="msg" placeholder="Type a Message...">
+                        <button id="btn-send-msg"><i class="fa fa-send"></i>
+                        </button>
+                    </div>
+                    <!-- <button id="btn-share-screen">Share Screen</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
