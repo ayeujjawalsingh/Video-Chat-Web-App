@@ -169,36 +169,15 @@ body {
 
 }
 
-/* @keyframes animate {
-    100% {
-        filter: hue-rotate(360deg);
-    }
-} */
-
 .maincontainer {
-    /* height: 85vh;
-    width: 85vw; */
     height: 91.5vh;
     width: 88.5vw;
     border-radius: 10px;
-    /* background-color: #dadbd4; */
-    /* background-color: #2bcbb6; */
     background-image: url(https://images5.alphacoders.com/323/323913.jpg);
     background-repeat: no-repeat;
     background-size: 110vw;
-    /* background-color: white; */
 
 }
-
-
-
-/* .titlesection {
-    font-family: 'Oxygen', sans-serif;
-} */
-
-
-
-
 
 
 #chat{
